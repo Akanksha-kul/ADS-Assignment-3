@@ -69,6 +69,7 @@ x = df2.iloc[:, 3:5].values
 df2 = df2.replace(np.NaN, 0)
 df2 = (df2 - df2.mean()) / df2.std()
 
+#Creata a heatmap to show correlation 
 plt.figure(figsize=(10, 8))
 sns.heatmap(df2.corr(), annot=True)
 plt.title('Heatmap to show the Various Indicators')
