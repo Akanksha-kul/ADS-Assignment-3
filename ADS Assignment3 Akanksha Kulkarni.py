@@ -38,7 +38,7 @@ df = pd.read_csv('/content/data.csv')
 df.dropna(inplace=True)
 df['Country'].unique()
 
-
+#Clean and transpose the data
 def cd(file):
     df1 = pd.read_csv(file, skiprows=4)
     df1 = df1.transpose()
